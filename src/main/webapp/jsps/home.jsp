@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f1f2f6;
+            background-color: #f4f4f9;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -31,7 +31,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border-bottom: 5px solid #00aaff;
+            border-bottom: 5px solid #0073e6;
         }
 
         header::before {
@@ -73,13 +73,13 @@
         .server-info {
             position: relative;
             padding: 40px;
-            background-color: #e6e6fa; /* Light violet background */
+            background: linear-gradient(135deg, #4e4e4e, #2b2b2b); /* Darker gradient background */
             margin: 30px auto;
             width: 90%;
             max-width: 800px;
             border-radius: 12px;
             box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-            color: #333; /* Darker text color for contrast */
+            color: #f4f4f9; /* Light text color for contrast */
         }
 
         .server-info::before {
@@ -105,14 +105,14 @@
         .server-info span {
             display: block;
             font-weight: bold;
-            color: #333; /* Adjust text color to darker for contrast */
+            color: #f4f4f9;
             margin-top: 10px;
         }
 
         .ip-info {
             margin-top: 30px;
             font-size: 1.2em;
-            color: #555; /* Slightly darker color for IP information */
+            color: #ccc; /* Light gray color for IP information */
         }
 
         .service-link {
@@ -134,12 +134,12 @@
         }
 
         footer {
-            background-color: #343a40;
+            background-color: #2b2b2b;
             color: white;
             text-align: center;
             padding: 20px 10px;
             font-size: 0.9em;
-            border-top: 5px solid #00aaff;
+            border-top: 5px solid #0073e6;
         }
 
         footer a {
