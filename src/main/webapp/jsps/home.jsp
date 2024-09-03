@@ -73,13 +73,13 @@
         .server-info {
             position: relative;
             padding: 40px;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(30, 30, 30, 0.9); /* Darker background with slight transparency */
             margin: 30px auto;
             width: 90%;
             max-width: 800px;
             border-radius: 12px;
-            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-            overflow: hidden; /* Ensure content doesn't overflow the border radius */
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+            color: #f1f1f1; /* Light text color for contrast */
         }
 
         .server-info::before {
@@ -92,7 +92,7 @@
             background-image: url('images/DevOps Loop.webp');
             background-size: cover;
             background-position: center;
-            opacity: 20;
+            opacity: 0.1;
             z-index: -1;
             border-radius: 12px;
         }
@@ -105,14 +105,14 @@
         .server-info span {
             display: block;
             font-weight: bold;
-            color: #333;
+            color: #f1f1f1; /* Adjust text color to light for contrast */
             margin-top: 10px;
         }
 
         .ip-info {
             margin-top: 30px;
             font-size: 1.2em;
-            color: #555;
+            color: #ddd; /* Slightly lighter color for IP information */
         }
 
         .service-link {
@@ -166,7 +166,7 @@
         <span>ITech Tutorials,</span>
         <span>Munnekolala, Marathahalli,</span>
         <span>Bangalore.</span>
-        <span><a href="mailto:itechtutorialshub@gmail.com">Mail to ITech Tutorials</a></span>
+        <span><a href="mailto:itechtutorialshub@gmail.com" style="color: #00aaff;">Mail to ITech Tutorials</a></span>
         
         <div class="ip-info">
             <h2>Server Information</h2>
