@@ -20,7 +20,6 @@
         }
         header {
             position: relative;
-            background-color: #0073e6;
             padding: 20px;
             text-align: center;
             color: white;
@@ -39,16 +38,6 @@
             font-size: 1.2em;
             z-index: 1;
             position: relative;
-        }
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 115, 230, 0.8); /* Semi-transparent overlay to ensure text readability */
-            z-index: 0;
         }
         main {
             flex: 1;
