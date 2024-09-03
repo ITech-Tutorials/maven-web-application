@@ -9,28 +9,30 @@
     <link rel="icon" href="images/ITechTutorials.png" type="image/png">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+
         header {
             position: relative;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
-            color: white;
-            background-image: url('images/banner.png'); /* Use the correct path to the banner image */
+            background-image: url('images/banner.png');
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            color: white;
         }
+
         header::before {
             content: "";
             position: absolute;
@@ -38,40 +40,45 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent overlay */
             z-index: 1;
         }
+
         header h1, header h2 {
             margin: 0;
             z-index: 2;
             position: relative;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
         }
+
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             font-weight: bold;
+            letter-spacing: 2px;
         }
+
         header h2 {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.5em;
+            margin-top: 15px;
+            letter-spacing: 1px;
         }
+
         main {
             flex: 1;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
-        main h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
+
         .server-info {
             position: relative;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 30px auto;
             width: 80%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         }
+
         .server-info::before {
             content: "";
             position: absolute;
@@ -84,45 +91,60 @@
             background-position: center;
             opacity: 0.2;
             z-index: -1;
-            border-radius: 10px;
+            border-radius: 12px;
         }
+
         .server-info img {
-            width: 100px;
-            margin-bottom: 10px;
+            width: 120px;
+            margin-bottom: 15px;
         }
+
         .server-info span {
             display: block;
             font-weight: bold;
             color: #333;
+            margin-top: 8px;
         }
+
         .ip-info {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 1.2em;
             color: #555;
         }
+
         .service-link {
             display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #0073e6;
+            margin: 25px 0;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #0073e6, #00aaff);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 1.1em;
+            font-weight: bold;
         }
+
         .service-link:hover {
-            background-color: #005bb5;
+            background: linear-gradient(135deg, #005bb5, #0073e6);
+            transform: scale(1.05);
         }
+
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px 10px;
             font-size: 0.9em;
         }
+
         footer a {
             color: #00aaff;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
