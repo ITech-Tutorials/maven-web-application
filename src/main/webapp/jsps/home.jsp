@@ -68,6 +68,17 @@
         .service-link:hover {
             background-color: #005bb5;
         }
+        .devops-loop {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .devops-loop img {
+            width: 300px; /* Adjust this value as needed */
+            height: auto;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -110,6 +121,9 @@
         <span><a href="mailto:itechtutorialshub@gmail.com">Mail to ITech Tutorials</a></span>
     </div>
     <hr>
+    <div class="devops-loop">
+        <img src="images/DevOps Loop.webp" alt="DevOps Loop">
+    </div>
     <a class="service-link" href="services/employee/getEmployeeDetails">Get Employee Details</a>
 </main>
 
