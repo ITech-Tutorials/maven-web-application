@@ -37,23 +37,42 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
+        .server-info {
+            position: relative;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .server-info::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/DevOps Loop.webp');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        .server-info img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .server-info span {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
         .ip-info {
             margin-top: 20px;
             font-size: 1.2em;
             color: #555;
-        }
-        .address {
-            margin: 20px 0;
-            font-size: 1.1em;
-            text-align: center;
-        }
-        .address img {
-            width: 100px;
-            margin-bottom: 10px;
-        }
-        .address span {
-            display: block;
-            font-weight: bold;
         }
         .service-link {
             display: inline-block;
@@ -67,17 +86,6 @@
         }
         .service-link:hover {
             background-color: #005bb5;
-        }
-        .devops-loop {
-            background-color: white;
-            padding: 20px;
-            margin: 20px auto;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .devops-loop img {
-            width: 300px; /* Adjust this value as needed */
-            height: auto;
         }
         footer {
             background-color: #333;
@@ -101,29 +109,26 @@
 
 <main>
     <hr>
-    <div class="ip-info">
-        <h2>Server Information</h2>
-        <% 
-        String ip = "";
-        InetAddress inetAddress = InetAddress.getLocalHost();
-        ip = inetAddress.getHostAddress();
-        out.println("Server Host Name: " + inetAddress.getHostName()); 
-        %>
-        <br>
-        <% out.println("Server IP Address: " + ip); %>
-    </div>
-    <hr>
-    <div class="address">
+    <div class="server-info">
         <img src="images/ITechTutorials.png" alt="ITech Tutorials Logo">
         <span>ITech Tutorials,</span>
         <span>Munnekolala, Marathahalli,</span>
         <span>Bangalore.</span>
         <span><a href="mailto:itechtutorialshub@gmail.com">Mail to ITech Tutorials</a></span>
+        
+        <div class="ip-info">
+            <h2>Server Information</h2>
+            <% 
+            String ip = "";
+            InetAddress inetAddress = InetAddress.getLocalHost();
+            ip = inetAddress.getHostAddress();
+            out.println("Server Host Name: " + inetAddress.getHostName()); 
+            %>
+            <br>
+            <% out.println("Server IP Address: " + ip); %>
+        </div>
     </div>
     <hr>
-    <div class="devops-loop">
-        <img src="images/DevOps Loop.webp" alt="DevOps Loop">
-    </div>
     <a class="service-link" href="services/employee/getEmployeeDetails">Get Employee Details</a>
 </main>
 
