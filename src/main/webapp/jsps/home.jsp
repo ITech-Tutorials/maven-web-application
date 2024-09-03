@@ -26,18 +26,33 @@
             background-image: url('images/banner.png'); /* Use the correct path to the banner image */
             background-size: cover;
             background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        header h1, header h2 {
+            margin: 0;
+            z-index: 2;
+            position: relative;
         }
         header h1 {
-            margin: 0;
             font-size: 2.5em;
-            z-index: 1;
-            position: relative;
+            font-weight: bold;
         }
         header h2 {
-            margin: 0;
             font-size: 1.2em;
-            z-index: 1;
-            position: relative;
+            margin-top: 10px;
         }
         main {
             flex: 1;
