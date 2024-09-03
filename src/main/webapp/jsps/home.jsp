@@ -31,7 +31,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border-bottom: 5px solid #00aaff; /* Accent border for better visual appeal */
+            border-bottom: 5px solid #00aaff;
         }
 
         header::before {
@@ -41,7 +41,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Darker semi-transparent overlay */
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
@@ -49,7 +49,7 @@
             margin: 0;
             z-index: 2;
             position: relative;
-            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8); /* More pronounced text shadow */
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
         }
 
         header h1 {
@@ -73,13 +73,13 @@
         .server-info {
             position: relative;
             padding: 40px;
-            background-color: rgba(30, 30, 30, 0.9); /* Darker background with slight transparency */
+            background-color: #e6e6fa; /* Light violet background */
             margin: 30px auto;
             width: 90%;
             max-width: 800px;
             border-radius: 12px;
             box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-            color: #f1f1f1; /* Light text color for contrast */
+            color: #333; /* Darker text color for contrast */
         }
 
         .server-info::before {
@@ -105,14 +105,14 @@
         .server-info span {
             display: block;
             font-weight: bold;
-            color: #f1f1f1; /* Adjust text color to light for contrast */
+            color: #333; /* Adjust text color to darker for contrast */
             margin-top: 10px;
         }
 
         .ip-info {
             margin-top: 30px;
             font-size: 1.2em;
-            color: #ddd; /* Slightly lighter color for IP information */
+            color: #555; /* Slightly darker color for IP information */
         }
 
         .service-link {
@@ -139,7 +139,7 @@
             text-align: center;
             padding: 20px 10px;
             font-size: 0.9em;
-            border-top: 5px solid #00aaff; /* Accent border for footer */
+            border-top: 5px solid #00aaff;
         }
 
         footer a {
