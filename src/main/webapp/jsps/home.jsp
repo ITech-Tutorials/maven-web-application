@@ -92,7 +92,7 @@
             background-image: url('images/DevOps Loop.webp');
             background-size: cover;
             background-position: center;
-            opacity: 10;
+            opacity: 20;
             z-index: -1;
             border-radius: 12px;
         }
