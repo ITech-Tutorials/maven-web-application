@@ -45,11 +45,15 @@
         .address {
             margin: 20px 0;
             font-size: 1.1em;
+            text-align: center;
         }
         .address img {
             width: 100px;
-            margin-right: 20px;
-            vertical-align: middle;
+            margin-bottom: 10px;
+        }
+        .address span {
+            display: block;
+            font-weight: bold;
         }
         .service-link {
             display: inline-block;
@@ -100,12 +104,10 @@
     <hr>
     <div class="address">
         <img src="images/ITechTutorials.png" alt="ITech Tutorials Logo">
-        <span>
-            ITech Tutorials,<br>
-            Munnekolala, Marathahalli,<br>
-            Bangalore.<br>
-            <a href="mailto:itechtutorialshub@gmail.com">Mail to ITech Tutorials</a>
-        </span>
+        <span>ITech Tutorials,</span>
+        <span>Munnekolala, Marathahalli,</span>
+        <span>Bangalore.</span>
+        <span><a href="mailto:itechtutorialshub@gmail.com">Mail to ITech Tutorials</a></span>
     </div>
     <hr>
     <a class="service-link" href="services/employee/getEmployeeDetails">Get Employee Details</a>
