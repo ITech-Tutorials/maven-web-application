@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f1f2f6;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -21,16 +21,17 @@
 
         header {
             position: relative;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             background-image: url('images/banner.png');
             background-size: cover;
             background-position: center;
+            color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: white;
+            border-bottom: 5px solid #00aaff; /* Accent border for better visual appeal */
         }
 
         header::before {
@@ -40,7 +41,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent overlay */
+            background-color: rgba(0, 0, 0, 0.5); /* Darker semi-transparent overlay */
             z-index: 1;
         }
 
@@ -48,19 +49,19 @@
             margin: 0;
             z-index: 2;
             position: relative;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8); /* More pronounced text shadow */
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
 
         header h2 {
-            font-size: 1.5em;
-            margin-top: 15px;
-            letter-spacing: 1px;
+            font-size: 1.8em;
+            margin-top: 10px;
+            letter-spacing: 1.5px;
         }
 
         main {
@@ -71,12 +72,14 @@
 
         .server-info {
             position: relative;
-            padding: 30px;
+            padding: 40px;
             background-color: rgba(255, 255, 255, 0.95);
             margin: 30px auto;
-            width: 80%;
+            width: 90%;
+            max-width: 800px;
             border-radius: 12px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure content doesn't overflow the border radius */
         }
 
         .server-info::before {
@@ -89,13 +92,13 @@
             background-image: url('images/DevOps Loop.webp');
             background-size: cover;
             background-position: center;
-            opacity: 0.2;
+            opacity: 0.5;
             z-index: -1;
             border-radius: 12px;
         }
 
         .server-info img {
-            width: 120px;
+            width: 100px;
             margin-bottom: 15px;
         }
 
@@ -103,25 +106,25 @@
             display: block;
             font-weight: bold;
             color: #333;
-            margin-top: 8px;
+            margin-top: 10px;
         }
 
         .ip-info {
-            margin-top: 25px;
+            margin-top: 30px;
             font-size: 1.2em;
             color: #555;
         }
 
         .service-link {
             display: inline-block;
-            margin: 25px 0;
-            padding: 12px 25px;
+            margin: 30px 0;
+            padding: 14px 30px;
             background: linear-gradient(135deg, #0073e6, #00aaff);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             transition: background 0.3s ease, transform 0.3s ease;
-            font-size: 1.1em;
+            font-size: 1.2em;
             font-weight: bold;
         }
 
@@ -134,8 +137,9 @@
             background-color: #343a40;
             color: white;
             text-align: center;
-            padding: 15px 10px;
+            padding: 20px 10px;
             font-size: 0.9em;
+            border-top: 5px solid #00aaff; /* Accent border for footer */
         }
 
         footer a {
