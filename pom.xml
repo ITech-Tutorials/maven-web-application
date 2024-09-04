@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.7.252.131:9000/</sonar.host.url>
+		<sonar.host.url>http://13.200.246.78:9000/</sonar.host.url>
 		<sonar.login>squ_570fa0def4cb0a9096b980cab564ec4050cb4881</sonar.login>
 		<!--<sonar.password>admin</sonar.password> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>ITech Tutorials Releases Nexus Repository</name>
-	      <url>http://65.2.79.215:8081/repository/maven-releases/</url>
+	      <url>http://13.233.159.158:8081/repository/maven-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>ITech Tutorials Snapshot Nexus Repository </name>
-	      <url>http://65.2.79.215:8081/repository/maven-web-application-snapshot/</url>
+	      <url>http://13.233.159.158:8081/repository/maven-web-application-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
